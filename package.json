@@ -5,8 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build  --configuration=production --base-href=./",
-    "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build  --configuration=prod --base-href=./",
+    "watch": "ng build --watch --configuration dev",
     "test": "ng test"
   },
   "private": true,
