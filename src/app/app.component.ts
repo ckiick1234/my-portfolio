@@ -1,33 +1,20 @@
 import {Component} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {HeaderComponent} from "./components/header/header.component";
-import {ProfileComponent} from "./components/profile/profile.component";
-import {AboutComponent} from "./components/about/about.component";
-import {ExperienceComponent} from "./components/experience/experience.component";
-import {ProjectsComponent} from "./components/projects/projects.component";
-import {ContactComponent} from "./components/contact/contact.component";
-import {FooterComponent} from "./components/footer/footer.component";
-import { TextFunctionService } from './text-function.service';
+import {HeaderComponent} from "./landing/header/header.component";
+import {ProfileComponent} from "./landing/profile/profile.component";
+import {AboutComponent} from "./landing/about/about.component";
+import {ExperienceComponent} from "./landing/experience/experience.component";
+import {ProjectsComponent} from "./landing/projects/projects.component";
+import {ContactComponent} from "./landing/contact/contact.component";
+import {FooterComponent} from "./landing/footer/footer.component";
+import { CalculatorComponent } from './features/calculator/calculator.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ProfileComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, FooterComponent],
-  templateUrl: './app.component.html',
-  providers: [TextFunctionService]
+  imports: [RouterOutlet, HeaderComponent, ProfileComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, FooterComponent, CalculatorComponent],
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   title = 'portfolio';
-
-  constructor(private textFunctionService: TextFunctionService) {
-
-    this.textFunctionService.getText().subscribe({
-      next: (text) => {
-        console.log('Received text:', text);
-      },
-      error: (err) => {
-        console.error('Error fetching text:', err);
-      }
-    });
-  }
 }

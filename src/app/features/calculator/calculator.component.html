@@ -1,0 +1,29 @@
+<div class="calculator">
+  <div class="display">{{ displayValue }}</div>
+
+  <div class="keys">
+    <button (click)="clear()" class="operator">AC</button>
+    <button class="operator">+/-</button>
+    <button class="operator">%</button>
+    <button (click)="handleOperator('/')" class="operator">÷</button>
+
+    <button (click)="inputDigit('7')">7</button>
+    <button (click)="inputDigit('8')">8</button>
+    <button (click)="inputDigit('9')">9</button>
+    <button (click)="handleOperator('*')" class="operator">×</button>
+
+    <button (click)="inputDigit('4')">4</button>
+    <button (click)="inputDigit('5')">5</button>
+    <button (click)="inputDigit('6')">6</button>
+    <button (click)="handleOperator('-')" class="operator">-</button>
+
+    <button (click)="inputDigit('1')">1</button>
+    <button (click)="inputDigit('2')">2</button>
+    <button (click)="inputDigit('3')">3</button>
+    <button (click)="handleOperator('+')" class="operator">+</button>
+
+    <button (click)="inputDigit('0')" class="zero">0</button>
+    <button (click)="inputDecimal()">.</button>
+    <button (click)="calculate()" class="operator">=</button>
+  </div>
+</div>
