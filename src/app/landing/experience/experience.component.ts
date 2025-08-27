@@ -19,24 +19,25 @@ interface ExperienceItem {
 export class ExperienceComponent {
 
   private experienceItems: ExperienceItem[] = [
-    {name: "Java", src: "./assets/technologies/java.png"},
-    {name: "Spring Boot", src: "./assets/technologies/spring-boot.png"},
-    {name: "Kafka", src: "./assets/technologies/kafka.png"},
-    {name: "MySQL", src: "./assets/technologies/mysql.png"},
-    {name: "PostgreSQL", src: "./assets/technologies/postgresql.png"},
-    {name: "Redis", src: "./assets/technologies/redis.png"},
-    {name: "Javascript", src: "./assets/technologies/js.png"},
     {name: "Typescript", src: "./assets/technologies/ts.png"},
     {name: "Angular", src: "./assets/technologies/angular.png"},
-    {name: "React", src: "./assets/technologies/react.png"},
-    {name: "Next.js", src: "./assets/technologies/next.png"},
     {name: "HTML", src: "./assets/technologies/html.png"},
     {name: "CSS", src: "./assets/technologies/css.png"},
     {name: "Bootstrap", src: "./assets/technologies/bootstrap.png"},
-    {name: "Kubernetes", src: "./assets/technologies/kubernetes.png"},
     {name: "Docker", src: "./assets/technologies/docker.png"},
-    {name: "GCP", src: "./assets/technologies/gcp.png"},
-    {name: "GIT", src: "./assets/technologies/git.png"},
+    {name: ".NET Framework", src: "./assets/technologies/DotNetFramework.jpg"},
+    {name: ".NET 8", src: "./assets/technologies/DotNet8.webp"},
+    {name: "SQL", src: "./assets/technologies/SQL.jfif"},
+    {name: "MongoDB", src: "./assets/technologies/MongoDB.png"},
+    {name: "SSIS", src: "./assets/technologies/SSIS.png"},
+    {name: "Tableau", src: "./assets/technologies/Tableau.png"},
+    {name: "Node.js", src: "./assets/technologies/NodeJS.png"},
+    {name: "Aspose", src: "./assets/technologies/Aspose.svg"},
+    {name: "Azure", src: "./assets/technologies/Azure.png"},
+    {name: "Azure DevOps", src: "./assets/technologies/AzureDevOps.jpg"},
+    {name: "Entity Framework", src: "./assets/technologies/EntityFramework.jpg"},
+    {name: "Mongoose", src: "./assets/technologies/Mongoose.png"},
+    {name: "NUnit", src: "./assets/technologies/NUnit.svg"}
   ];
 
   // needed to create an infinite-like scroll effect
